@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|bottom"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    >
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:text=""
+        android:textSize="70sp"
+        android:gravity="end|center"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="6"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/porcentaje"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:onClick="cuadrado"
+                android:text="x²"
+                android:textSize="30sp"
+
+
+                />
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/bracket"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:onClick="cubo"
+                android:text=" X³"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/clear"
+                android:text="C"
+                android:onClick="clear"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/raiz"
+                android:text="√"
+                android:onClick="Raiz"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/siete"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:onClick="siete"
+                android:textSize="30sp"
+
+
+                />
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/ocho"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:onClick="ocho"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/nueve"
+                android:text="9"
+                android:onClick="nueve"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/multiplicar"
+                android:text="X"
+                android:onClick="Multiplicar"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/cuatro"
+                android:onClick="cuatro"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:textSize="30sp"
+
+
+                />
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/cinco"
+                android:layout_width="90dp"
+                android:onClick="cinco"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/seis"
+                android:text="6"
+                android:onClick="seis"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/restar"
+                android:onClick="restar"
+                android:text="-"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/uno"
+                android:onClick="uno"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="30sp"
+
+
+                />
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/dos"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:onClick="dos"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/tres"
+                android:text="3"
+                android:onClick="tres"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/suma"
+                android:text="+"
+                android:onClick="suma"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/dividir"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:onClick="dividir"
+                android:textSize="30sp"
+
+
+                />
+
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/cero"
+                android:onClick="cero"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/punto"
+                android:onClick="punto"
+                android:text="."
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+            <Button
+                android:layout_margin="4dp"
+                android:id="@+id/igual"
+                android:text="="
+                android:onClick="igual"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+
+                />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>
